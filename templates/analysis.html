@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Standout by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Untitled</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="logo"><a href="/">Analysis <span>by Charles Nana Asiedu</span></a></span>
+						<a href="#menu"><span>Menu</span></a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Home</a></li>
+								<li><a href="/portfolio">Portfolio</a></li>
+							</ul>
+							<a class="close"><span>Close</span></a>
+						</div>
+					</nav>
+
+				<!-- Main -->
+					<section id="main" class="wrapper style2">
+						<div class="inner">
+							<header class="major special">
+								<h1>Google Play Store Analysis</h1>
+								<!--<p></p>-->
+							</header>
+							<a href="#" class="image main"><img src="static/images/slides/gpsmain.jpg" alt="" /></a>
+							<p>A couple of friends and I got into a conversation about the kind of app to build for Google Play Store that will have prospects of performing well, and in which category it will be best to put it. I decided to use data analysis to answer this question. For those of us aiming at being the next socially awkward tech billionaire (*cough, cough, Zuckerberg), this analysis will go a long way to provide us with the relevant information as to the kind of app that has the potential to yield major dividends on the Google Play Store. In the process we will make a few interesting discoveries.</p>
+							<h4>Methodology</h4>
+							<p>The analysis started with cleaning the data. Duplicates, columns that weren’t going to be useful in the analysis were removed. It is important to note that, this dataset is a sample and the sample was served up based on the geographical location and user behavior of the person who scraped it. The dataset has 10841 rows and 12 columns. I used Plotly for all the visualization in this analysis.</p>
+							<p>I was interested in finding out which apps were topping lists, for example the most expensive app, the app with the highest ratings etc.</p>
+							<h5>Ratings</h5>
+							<p>I started with ratings. Interestingly, I discovered that apps with very few downloads topped the ratings list. I concluded that these ratings probably came from the people the owner of the app knew personally. The app that came up on top as the app with the highest rating was a medical app that had only one download yet, had a perfect 5.0 rating. It is thus safe to say, based on this, that you can’t conclude an app is performing well on the Play Store based on its ratings alone. </p>
+							<h5>Reviews</h5>
+							<p>The apps with the highest reviews were the usual suspects, the social and communication apps like WhatsApp, Facebook, Instagram, Twitter amongst others. 4 out of the top 5 apps with the highest reviews were social and communication apps. I guess it’s true what they say about communication being a two-way street; we communicate with others using these platforms and then we communicate to them what we think about their platform.</p>
+							<p>The Play Store has content ratings that show the category of people an app is for, like, “Everyone”, “Adult Only 18+”, “Teen”, “Mature 17+”, “Everyone 10+”, “Unrated”. It goes without saying that the category for “Everyone” will have the most apps, a fact that I had gone into this analysis already suspecting. However, I wanted to know exactly how competitive that content rating was.</p>
+							<a href="#" class="image main"><img src="static/images/slides/content rating.png" alt="" /></a>
+							<p>From the analysis, more than 80 percent of the apps on the Play Store are under the category “Everyone”. How predictably unsurprising!</p>
+							<h5>Most Expensive</h5>
+							<p>Next on the list was “Most Expensive app”. Here, I discovered something extremely interesting. The most expensive app on the google play store cost 400 green, Joe Biden dollar ($400)!! The name of the app was “I’m Rich”. There were a lot of these apps with the same name and all of them cost $300+. It didn’t look right so I did some research on the app and found that the app does absolutely nothing; it simply displays a picture of a gemstone you can use to brag about how rich you are. A little more digging led me to the backstory of this app.
+In 2008, Armin Heinrich released the very first version of “I am Rich” app in the App Store for $999.90. He made a total of 7 sales before the app was removed by Apple. All the other twin “I’m Rich” apps which were on the Google Play Store have now been removed too.
+Working with this data was bound to produce a flawed analysis, so I decided to do away with all the “I’m Rich” apps. After taking out all the different versions of the “I am rich” apps I discovered that the most expensive app on the google play store was a medical app that cost $ 79.99.
+Before you start to get any get-rich-quick ideas, you must bear in mind that an app being expensive doesn’t mean the owner is making money from it. The app could be expensive but only two people might have purchased it.
+The next step was to find out which apps were actually making their owners money. The top spot for the highest-grossing paid app was Minecraft at almost $70 million. Minecraft was listed in the “Family” category instead of “Game”. Which tends to suggest that Google Play Store isn’t too strict with their Categories.
+</p>
+							<h5>Categories</h5>
+							<p>For Categories, the main question was, which apps are the most competitive and popular?</p>
+							<a href="#" class="image main"><img src="static/images/slides/competitive.png" alt="" /></a>
+							<p>From the data, it showed that Family and Game categories were the most competitive with 1606 and 910 apps in the “Family” and “Game” categories respectively. The most competitive category might not be the most popular category. The real indicator of “most popular category” would be the category with the highest number of installs.</p>
+							<a href="#" class="image main"><img src="static/images/slides/mostpopu.png" alt="" /></a>
+							<p>In assessing the most popular category, the “Game” category won. That is to say, that is the category with the highest number of installs or downloads. I further enquired whether the high number of downloads were spread among the numerous apps in the category or it was just one popular app getting those high numbers.</p>
+							<a href="#" class="image main"><img src="static/images/slides/spread.png" alt="" /></a>
+							<a href="#" class="image main"><img src="static/images/slides/spreadcolor.png" alt="" /></a>
+							<p>The circles in the green rectangle represent the Family, Game and Tools categories. The big mauve dot is the “Family” category with over 30 billion downloads shared among 1606 apps. You can tell that there are variety of apps in that category sharing in the high number of installs. The yellow dot is the “Game” category and the last dot is “Tools” category. All categories that have variety of apps sharing in the high numbers unlike the categories in the yellow rectangle that have all its installs concentrated on few apps. The categories in the red rectangle have both low number of downloads and apps.</p>
+							<p>Depending on the category, you might want to make the app free or paid.</p>
+							<a href="#" class="image main"><img src="static/images/slides/freepaid.png" alt="" /></a>
+							<h4>Recommendation</h4>
+							<p>Your app is more likely to perform well in the Google Play Store if it’s in the popular categories like “Game”, “Family”, or “Tools” categories.</p>
+							<p>If it’s an “Event”, “Beauty” or any of the categories with small number of paid apps or even no paid apps at all, it would make sense for you to make your app a free app, too.</p>
+							<p>If your app is for the “Medical” or “Personalization” categories, you might want to charge a fee for it because these and the other categories with high numbers of paid apps are the most competitive categories for paid apps. Consumers expect and are willing to pay for apps in these categories.</p>
+
+						</div>
+					</section>
+
+
+
+				<!-- Copyright -->
+					<section class="wrapper style2 copyright">
+						<div class="inner">
+							&copy; {{year}} Charles Nana Asiedu. All rights reserved.
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
